@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+.outer-box{
+  height: 700px;
+    width: 1000px;
+    background-color: #0B2434;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* align-content: center; */
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Karla',sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.inner-box{
+  height: 600px;
+  width: 900px;
+  /* margin:15px; */
+  border-radius: 10px;
+  background-color: #F5F5F5;
   flex-direction: column;
-  align-items: center;
+  display: flex;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+
+.die-container{
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  grid-gap: 50px;
+}
+
+
+.die{
+  
+  height: 100px;
+  width: 100px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.die-number{
+  font-size: 4rem;
+}
+
+.roll-button{
+  height: 60px;
+  width: 200px;
+  border: none;
+  border-radius: 8px;
+  background-color: #5035FF;
   color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+   justify-content: center;
+   margin-top: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.roll-button:focus{
+  outline: none;
+}
+.roll-button:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(0,0,0,0.7);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.title{
+font-size: 3rem;
+margin: 0;
+}
+
+.instructions{
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin: 30px 80px 40px 80px;
+  text-align: center;
+  line-height: 1.5;
 }
